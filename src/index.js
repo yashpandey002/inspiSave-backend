@@ -6,7 +6,13 @@ const { Client } = require('@notionhq/client');
 const { asyncHandler, errorHandler } = require('./utils');
 const app = express();
 
-app.use(cors({}));
+const corsOptions = {
+    origin: process.env.FRONTEND_URL,
+    credentials: true,
+    optionsSuccessStatus: 200,
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 
 const ROOT_URL = '/api/v1';
