@@ -1,0 +1,20 @@
+{
+    "name": "server",
+    "version": "1.0.0",
+    "main": "./src/index.js",
+    "scripts": {
+        "devstart": "nodemon --env-file=.env src/index.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "dependencies": {
+        "@notionhq/client": "^2.2.15",
+        "axios": "^1.7.9",
+        "cors": "^2.8.5",
+        "express": "^4.21.1",
+        "multer": "^1.4.5-lts.1",
+        "nodemon": "^3.1.7"
+    }
+}
