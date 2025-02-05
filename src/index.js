@@ -162,6 +162,10 @@ app.post(
     })
 );
 
+app.get('/test-app', (req, res) => {
+    res.end('Everything working fine');
+});
+
 app.use(errorHandler);
 
 app.listen('3000', () => {
