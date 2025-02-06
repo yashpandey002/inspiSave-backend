@@ -4,7 +4,8 @@
     "main": "./src/index.js",
     "type": "module",
     "scripts": {
-        "devstart": "nodemon --env-file=.env src/index.js"
+        "devstart": "nodemon --env-file=.env src/index.js",
+        "vercel-build": "echo hello"
     },
     "keywords": [],
     "author": "",
