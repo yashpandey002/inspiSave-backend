@@ -4,8 +4,8 @@
     "main": "./src/index.js",
     "type": "module",
     "scripts": {
-        "devstart": "nodemon --env-file=.env src/index.js",
-        "start": "node ./src/index.js"
+        "start": "node ./src/index.js",
+        "devstart": "nodemon --env-file=.env src/index.js"
     },
     "keywords": [],
     "author": "",

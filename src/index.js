@@ -17,11 +17,12 @@ app.get('/test-app', (req, res) => {
 
 app.use(cors());
 app.use(express.json());
+app.use(express.urlencoded());
 
 app.use('/api/v1', routes);
 
 app.use(errorHandler);
 
 app.listen(PORT, () => {
-    console.log('App is running at port 3000');
+    console.log(`App is running at port ${PORT}`);
 });
