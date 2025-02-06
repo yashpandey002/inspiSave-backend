@@ -3,6 +3,7 @@ import cors from 'cors';
 import { errorHandler } from './utils.js';
 import routes from './routes/index.js';
 const app = express();
+const PORT = process.env.PORT || 8080;
 
 app.get('/test-app', (req, res) => {
     res.end('Everything working fine');
@@ -21,6 +22,6 @@ app.use('/api/v1', routes);
 
 app.use(errorHandler);
 
-app.listen('3000', () => {
+app.listen(PORT, () => {
     console.log('App is running at port 3000');
 });
